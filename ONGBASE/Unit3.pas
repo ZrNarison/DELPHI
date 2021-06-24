@@ -1,0 +1,36 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls;
+
+type
+  TForm3 = class(TForm)
+    MainMenu1: TMainMenu;
+    FICHIER1: TMenuItem;
+    EDITER1: TMenuItem;
+    Nouveau1: TMenuItem;
+    ActivitPNNC1: TMenuItem;
+    ONG1: TMenuItem;
+    N1: TMenuItem;
+    Personnel1: TMenuItem;
+    Site1: TMenuItem;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+end.

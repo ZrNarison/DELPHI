@@ -1,0 +1,32 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    FullSize = True
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    TabHeight = 49.000000000000000000
+    inherited TabItem1: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      inherited Grid1: TGrid
+        Position.Y = 8.000000000000000000
+        inherited Column2: TColumn
+          Position.Y = -16.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      inherited Panel1: TPanel
+        inherited Panel2: TPanel
+          inherited Label5: TLabel
+            Position.X = 13.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

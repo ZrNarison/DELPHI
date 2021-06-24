@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// Composants gérés par l'EDI
+	TMainMenu *MainMenu1;
+	TMenuItem *Fichier1;
+	TMenuItem *Editer1;
+	TPageControl *PageControl1;
+	TTabSheet *TabSheet1;
+	TMenuItem *Nouveau1;
+	TMenuItem *ActivitePNNC1;
+	TTabSheet *TabSheet2;
+	TTabSheet *TabSheet3;
+	TTabSheet *TabSheet4;
+private:	// Déclarations utilisateur
+public:		// Déclarations utilisateur
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

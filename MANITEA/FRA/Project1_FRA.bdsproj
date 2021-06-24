@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">W32ResourceDLL.Personality</Option>
+      <Option Name="ProjectType">ResourceDLL</Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{9B06482D-3D53-4FBC-8628-30BF5B0B2999}</Option>
+    </Option>
+  </PersonalityInfo>
+  <W32ResourceDLL.Personality>
+    <Source>
+      <Source Name="MainSource">Project1.dpr</Source>
+    </Source>
+    <Options>
+      <Options Name="BaseLang">1036</Options>
+      <Options Name="TargetName">..\Project1.FRA</Options>
+      <Options Name="BRCC_IncludePath"></Options>
+      <Options Name="Company"></Options>
+      <Options Name="Configuration"></Options>
+      <Options Name="Copyright"></Options>
+      <Options Name="Description"></Options>
+      <Options Name="Trademark"></Options>
+      <Options Name="Product"></Options>
+      <Options Name="ProductVersion"></Options>
+      <Options Name="Title"></Options>
+      <Options Name="FileVersion"></Options>
+      <Options Name="Evidence"></Options>
+      <Options Name="KeyFile"></Options>
+      <Options Name="KeyName"></Options>
+    </Options>
+    <FileList>
+      <File FileName="vcl\DBLOGDLG.dfm" ContainerId="W32Form" ModuleName="DBLOGDLG.dfm"/>
+      <File FileName="vcl\DBPWDLG.dfm" ContainerId="W32Form" ModuleName="DBPWDLG.dfm"/>
+      <File FileName="ACHAT.dfm" ContainerId="W32Form" ModuleName="ACHAT.dfm"/>
+      <File FileName="AdminCompte.dfm" ContainerId="W32Form" ModuleName="AdminCompte.dfm"/>
+      <File FileName="ConsultationAchat.dfm" ContainerId="W32Form" ModuleName="ConsultationAchat.dfm"/>
+      <File FileName="CONSULTATIONVENTES.dfm" ContainerId="W32Form" ModuleName="CONSULTATIONVENTES.dfm"/>
+      <File FileName="FactureAchat.dfm" ContainerId="W32Form" ModuleName="FactureAchat.dfm"/>
+      <File FileName="FactureVente.dfm" ContainerId="W32Form" ModuleName="FactureVente.dfm"/>
+      <File FileName="Fournisseur.dfm" ContainerId="W32Form" ModuleName="Fournisseur.dfm"/>
+      <File FileName="PASS.dfm" ContainerId="W32Form" ModuleName="PASS.dfm"/>
+      <File FileName="STATISTIQUEREGLEMENT.dfm" ContainerId="W32Form" ModuleName="STATISTIQUEREGLEMENT.dfm"/>
+      <File FileName="Unit1.dfm" ContainerId="W32Form" ModuleName="Unit1.dfm"/>
+      <File FileName="Unit2.dfm" ContainerId="W32Form" ModuleName="Unit2.dfm"/>
+      <File FileName="Unit3.dfm" ContainerId="W32Form" ModuleName="Unit3.dfm"/>
+      <File FileName="VENTE.dfm" ContainerId="W32Form" ModuleName="VENTE.dfm"/>
+      <File FileName="Project1_DRC.rc" ContainerId="W32RC" ModuleName="Project1_DRC.rc"/>
+    </FileList>
+  </W32ResourceDLL.Personality>
+</BorlandProject>

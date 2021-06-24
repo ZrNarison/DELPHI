@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Windows multiple'
+  ClientHeight = 363
+  ClientWidth = 813
+  Color = clWhite
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 358
+    Top = 74
+    Width = 93
+    Height = 21
+    Caption = 'Windows 7 x64'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 358
+    Top = 129
+    Width = 93
+    Height = 25
+    Caption = 'Windows 7 x86'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 358
+    Top = 184
+    Width = 93
+    Height = 25
+    Caption = 'Windows 8 Orion'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 358
+    Top = 239
+    Width = 93
+    Height = 25
+    Caption = 'Windows 10 x64'
+    TabOrder = 3
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 358
+    Top = 293
+    Width = 93
+    Height = 25
+    Caption = 'Windows 10 x86'
+    TabOrder = 4
+    OnClick = Button5Click
+  end
+end

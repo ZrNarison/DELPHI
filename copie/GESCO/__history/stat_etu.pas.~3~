@@ -1,0 +1,38 @@
+unit stat_etu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, VclTee.TeeGDIPlus, VCLTee.TeEngine,
+  VCLTee.Series, Vcl.ExtCtrls, VCLTee.TeeProcs, VCLTee.Chart, VCLTee.DBChart,
+  VCLTee.TeeDBCrossTab;
+
+type
+  TForm9 = class(TForm)
+    DBChart1: TDBChart;
+    Series1: TBarSeries;
+    Series2: TBarSeries;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form9: TForm9;
+
+implementation
+
+{$R *.dfm}
+
+uses base;
+
+procedure TForm9.FormCreate(Sender: TObject);
+begin
+DataModule2.ADOTable6.Active:=true;
+DataModule2.AdoQuery6.Active:=true;
+end;
+
+end.

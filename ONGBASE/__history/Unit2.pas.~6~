@@ -1,0 +1,59 @@
+unit Unit2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, jpeg, ExtCtrls;
+
+type
+  TForm2 = class(TForm)
+    MainMenu1: TMainMenu;
+    Fichier1: TMenuItem;
+    Edition1: TMenuItem;
+    Nouveau1: TMenuItem;
+    Quitter1: TMenuItem;
+    Journale1: TMenuItem;
+    N1: TMenuItem;
+    Aide1: TMenuItem;
+    Help1: TMenuItem;
+    procedure Nouveau1Click(Sender: TObject);
+    procedure Quitter1Click(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+uses Unit3;
+
+{$R *.dfm}
+
+procedure TForm2.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+if messagedlg('Voulez-vous vraiment fermer cette fenêtre ?',MtConfirmation,[MbYES,MbNO],0)=MrYES then
+Begin
+  canclose:=true;
+  form2.Close;
+End
+else
+canclose:=false;
+end;
+
+procedure TForm2.Nouveau1Click(Sender: TObject);
+begin
+Form3.ShowModal;
+end;
+
+procedure TForm2.Quitter1Click(Sender: TObject);
+begin
+Form2.Close;
+end;
+
+end.

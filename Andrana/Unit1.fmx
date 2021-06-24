@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 237
+  ClientWidth = 449
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\LOGICIEL\DOCUMEN' +
+      'TS\DELPHI\Andrana\Gesco.mdb;Persist Security Info=False'
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 144
+    Top = 128
+  end
+  object ADOCommand1: TADOCommand
+    Parameters = <>
+    Left = 240
+    Top = 96
+  end
+  object RDSConnection1: TRDSConnection
+    Left = 312
+    Top = 32
+  end
+  object ADODataSet1: TADODataSet
+    Parameters = <>
+    Left = 296
+    Top = 160
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 136
+    Top = 72
+  end
+end

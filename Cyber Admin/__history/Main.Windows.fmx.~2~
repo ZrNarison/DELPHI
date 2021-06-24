@@ -1,0 +1,20 @@
+inherited Form1_Windows: TForm1_Windows
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    inherited TabItem1: TTabItem
+      inherited Label7: TLabel
+        Position.X = 104.000000000000000000
+      end
+      inherited Label8: TLabel
+        Position.X = 272.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      inherited Panel1: TPanel
+        inherited TimeEdit2: TTimeEdit
+          Position.Y = 344.000000000000000000
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 577
+  ClientWidth = 853
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object MainMenu1: TMainMenu
+    Left = 72
+    Top = 72
+    object MenuItem1: TMenuItem
+      Text = '&FICHIER'
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = '&Nouveau'
+        object MenuItem5: TMenuItem
+          Locked = True
+          Text = '&Cours'
+          OnClick = MenuItem5Click
+        end
+        object MenuItem6: TMenuItem
+          Locked = True
+          Text = '&Etudiant'
+        end
+        object MenuItem7: TMenuItem
+          Locked = True
+          Text = '&Professeur'
+        end
+      end
+      object MenuItem8: TMenuItem
+        Locked = True
+        Text = '&Ouvrir'
+      end
+      object MenuItem9: TMenuItem
+        Locked = True
+        Text = '&QUITTER'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+    end
+    object MenuItem3: TMenuItem
+      Text = '&?'
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Scale
+    Position.X = -8.114151000976563000
+    Size.Width = 861.114318847656300000
+    Size.Height = 594.269470214843800000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 8
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 67.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau'
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 67.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau'
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 67.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau'
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 44.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Liste'
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\LOGICIEL\DOCUMEN' +
+      'TS\DELPHI\GESCO\Gesco.mdb;Mode=ReadWrite;Persist Security Info=F' +
+      'alse'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 656
+    Top = 8
+  end
+  object ADOCommand1: TADOCommand
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 728
+    Top = 16
+  end
+  object ADODataSet1: TADODataSet
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 792
+    Top = 16
+  end
+end

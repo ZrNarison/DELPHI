@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/05/22 12:34:22.650.pas,D:\LOGICIEL\DOCUMENTS\DELPHI2010\Activator\Unit1.pas=C:\Users\ThinkPad\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/22 12:34:22.650.dfm,D:\LOGICIEL\DOCUMENTS\DELPHI2010\Activator\Unit1.dfm=C:\Users\ThinkPad\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/05/22 12:46:18.529.dproj,D:\LOGICIEL\DOCUMENTS\DELPHI2010\Activator\Project1.dproj=C:\Users\ThinkPad\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

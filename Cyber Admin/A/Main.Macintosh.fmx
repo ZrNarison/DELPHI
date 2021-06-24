@@ -1,0 +1,13 @@
+inherited Form1_Macintosh: TForm1_Macintosh
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    inherited TabItem1: TTabItem
+      Size.Width = 81.000000000000000000
+      Size.Height = 26.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 103.000000000000000000
+      Size.Height = 26.000000000000000000
+    end
+  end
+end

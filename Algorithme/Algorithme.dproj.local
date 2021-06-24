@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/04/16 07:15:26.123.pas,C:\Users\LENOVO\Documents\RAD Studio\Projects\Unit1.pas=D:\DOCUMENTS\DELPHI2010\Algorithme\Multiplication.pas</Transaction>
+    <Transaction>2019/04/16 07:15:26.123.dfm,C:\Users\LENOVO\Documents\RAD Studio\Projects\Unit1.dfm=D:\DOCUMENTS\DELPHI2010\Algorithme\Multiplication.dfm</Transaction>
+    <Transaction>2019/04/16 07:15:38.861.dproj,C:\Users\LENOVO\Documents\RAD Studio\Projects\Project2.dproj=D:\DOCUMENTS\DELPHI2010\Algorithme\Algorithme.dproj</Transaction>
+    <Transaction>2019/04/16 07:23:21.046.pas,D:\DOCUMENTS\DELPHI2010\Algorithme\Unit2.pas=D:\DOCUMENTS\DELPHI2010\Algorithme\Ex2.pas</Transaction>
+    <Transaction>2019/04/16 07:23:21.046.dfm,D:\DOCUMENTS\DELPHI2010\Algorithme\Unit2.dfm=D:\DOCUMENTS\DELPHI2010\Algorithme\Ex2.dfm</Transaction>
+    <Transaction>2019/04/16 07:23:29.083.pas,D:\DOCUMENTS\DELPHI2010\Algorithme\Unit3.pas=D:\DOCUMENTS\DELPHI2010\Algorithme\ex3.pas</Transaction>
+    <Transaction>2019/04/16 07:23:29.083.dfm,D:\DOCUMENTS\DELPHI2010\Algorithme\Unit3.dfm=D:\DOCUMENTS\DELPHI2010\Algorithme\ex3.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

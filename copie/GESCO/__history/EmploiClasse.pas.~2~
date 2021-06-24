@@ -1,0 +1,31 @@
+unit EmploiClasse;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ColorGrd, Vcl.DBCtrls, Vcl.ExtCtrls,
+  Vcl.Grids;
+
+type
+  TForm14 = class(TForm)
+    Panel1: TPanel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DBLookupComboBox2: TDBLookupComboBox;
+    DrawGrid1: TDrawGrid;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form14: TForm14;
+
+implementation
+
+{$R *.dfm}
+
+uses base;
+
+end.

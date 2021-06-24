@@ -1,0 +1,48 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  ClientHeight = 512
+  ClientWidth = 767
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart1: TChart
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 512
+    Title.Text.Strings = (
+      'REPRESENATION GRAPHIQUE DES ELELVES')
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 80
+    ExplicitTop = 24
+    ExplicitWidth = 400
+    ExplicitHeight = 250
+    DefaultCanvas = 'TGDIPlusCanvas'
+    PrintMargins = (
+      15
+      17
+      15
+      17)
+    ColorPaletteIndex = 13
+    object Series2: TBarSeries
+      ColorEachPoint = True
+      DataSource = DBCrossTabSource1
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {0000000000}
+    end
+  end
+  object DBCrossTabSource1: TDBCrossTabSource
+    Series = Series2
+  end
+end

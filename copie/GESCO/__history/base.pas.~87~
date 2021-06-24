@@ -1,0 +1,221 @@
+unit base;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TDataModule2 = class(TDataModule)
+    ADOCommand1: TADOCommand;
+    ADOTable1: TADOTable;
+    ADOTable2: TADOTable;
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+    ADOTable2Classe: TWideStringField;
+    ADOTable2Tutilaire: TWideStringField;
+    ADOTable2Ecolage: TWideStringField;
+    ADOQuery1: TADOQuery;
+    DataSource3: TDataSource;
+    ADOTable3: TADOTable;
+    DataSource4: TDataSource;
+    ADOTable3Code: TWideStringField;
+    ADOTable3Matiere: TWideStringField;
+    ADOTable3Classe: TWideStringField;
+    ADOTable3Serie: TWideStringField;
+    ADOTable3Coefficient: TIntegerField;
+    ADOTable4: TADOTable;
+    DataSource5: TDataSource;
+    DataSource6: TDataSource;
+    ADOTable5: TADOTable;
+    WideStringField1: TWideStringField;
+    WideStringField2: TWideStringField;
+    WideStringField3: TWideStringField;
+    ADOQuery2: TADOQuery;
+    DataSource7: TDataSource;
+    ADOTable6: TADOTable;
+    DataSource8: TDataSource;
+    ADOConnection1: TADOConnection;
+    ADOQuery3: TADOQuery;
+    DataSource9: TDataSource;
+    ADOQuery4: TADOQuery;
+    DataSource10: TDataSource;
+    DataSource11: TDataSource;
+    ADOTable7: TADOTable;
+    ecolage: TDataSource;
+    ADOQuery6: TADOQuery;
+    reqecolage: TDataSource;
+    DataSource12: TDataSource;
+    ADOTable8: TADOTable;
+    DataSource13: TDataSource;
+    ADOTable9: TADOTable;
+    DataSource14: TDataSource;
+    ADOTable10: TADOTable;
+    ADOTable8id_ResF: TWideStringField;
+    ADOTable8CIN: TFloatField;
+    ADOTable8Nom: TWideStringField;
+    ADOTable8Prenom: TWideStringField;
+    ADOTable8Adresse: TWideStringField;
+    ADOTable8Telephone: TIntegerField;
+    ADOTable10N: TAutoIncField;
+    ADOTable10Matiere: TWideStringField;
+    ADOTable10Trimestre: TWideStringField;
+    ADOTable10Devoir: TIntegerField;
+    ADOTable10Examen: TIntegerField;
+    ADOTable10Observation: TWideStringField;
+    ADOTable10NMatricule: TIntegerField;
+    ADOTable9Trimestre: TWideStringField;
+    ADOTable9Debut: TDateTimeField;
+    ADOTable9Fin: TDateTimeField;
+    ADOQuery7: TADOQuery;
+    DataSource15: TDataSource;
+    ADOTable4Appellation: TWideStringField;
+    ADOTable4Nom: TWideStringField;
+    ADOTable4Prenom: TWideStringField;
+    ADOTable4Date_naissance: TDateTimeField;
+    ADOTable4Lieu_naissance: TWideStringField;
+    ADOTable4Adress: TWideStringField;
+    ADOTable4NCIN: TWideStringField;
+    ADOTable4Diplome: TWideStringField;
+    ADOTable4Matiere: TWideStringField;
+    ADOTable4Contact: TWideStringField;
+    ADOTable4D_Classe: TWideStringField;
+    ADOTable4F_Classe: TWideStringField;
+    ADOTable4Salaire: TFloatField;
+    ADOQuery8: TADOQuery;
+    ReqTrim: TDataSource;
+    ADOQuery7Trimestre: TWideStringField;
+    ADOQuery7Durée: TWideStringField;
+    ADOQuery9: TADOQuery;
+    reqecolage1: TDataSource;
+    ADOTable11: TADOTable;
+    DataSource16: TDataSource;
+    ADOTable12: TADOTable;
+    DataSource17: TDataSource;
+    ADOTable12Code: TWideStringField;
+    ADOTable12Matiere: TWideStringField;
+    ADOTable12Classe: TWideStringField;
+    ADOTable12Serie: TWideStringField;
+    ADOTable12Coefficient: TIntegerField;
+    ADOTable13: TADOTable;
+    DataSource18: TDataSource;
+    ADOTable11N: TAutoIncField;
+    ADOTable11Classe: TWideStringField;
+    ADOTable11Prof: TWideStringField;
+    ADOTable11Matiere: TWideStringField;
+    ADOTable11Jours: TWideStringField;
+    ADOTable11Duree: TIntegerField;
+    ADOTable11Date: TDateTimeField;
+    ADOQuery10: TADOQuery;
+    DataSource19: TDataSource;
+    ADOTable6NMatricule: TAutoIncField;
+    ADOTable6Nom: TWideStringField;
+    ADOTable6Date_naissance: TDateTimeField;
+    ADOTable6Lieu_naissance: TWideStringField;
+    ADOTable6Fille_Fils: TWideStringField;
+    ADOTable6Adresse: TWideStringField;
+    ADOTable6Classe: TWideStringField;
+    ADOTable6Contact: TWideStringField;
+    ADOTable6Sexe: TWideStringField;
+    ADOTable13NMatricule: TAutoIncField;
+    ADOTable13Nom: TWideStringField;
+    ADOTable13Date_naissance: TDateTimeField;
+    ADOTable13Lieu_naissance: TWideStringField;
+    ADOTable13Fille_Fils: TWideStringField;
+    ADOTable13Adresse: TWideStringField;
+    ADOTable13Classe: TWideStringField;
+    ADOTable13Contact: TWideStringField;
+    ADOTable13Sexe: TWideStringField;
+    ADOQuery5: TADOQuery;
+    DataSource20: TDataSource;
+    ADOTable14: TADOTable;
+    AutoIncField1: TAutoIncField;
+    WideStringField4: TWideStringField;
+    DateTimeField1: TDateTimeField;
+    WideStringField5: TWideStringField;
+    WideStringField6: TWideStringField;
+    WideStringField7: TWideStringField;
+    WideStringField8: TWideStringField;
+    WideStringField9: TWideStringField;
+    WideStringField10: TWideStringField;
+    ADOQuery11: TADOQuery;
+//    Application:Application;
+    DataSource21: TDataSource;
+    ADOTable15: TADOTable;
+    DataSource22: TDataSource;
+    ADOQuery12: TADOQuery;
+    DataSource23: TDataSource;
+    DataSource24: TDataSource;
+    ADOQuery13: TADOQuery;
+    ADOQuery14: TADOQuery;
+    DataSource25: TDataSource;
+    ADOQuery14NMatricule: TIntegerField;
+    ADOQuery14Responsable: TWideStringField;
+    ADOQuery14Du: TDateTimeField;
+    ADOQuery14Ecolagemois: TSmallintField;
+    ADOQuery14SOMME: TIntegerField;
+    ADOQuery1Classe: TWideStringField;
+    ADOQuery1Tutilaire: TWideStringField;
+    ADOQuery1Ecolage: TIntegerField;
+    ADOQuery5Classe: TWideStringField;
+    ADOQuery8Trimestre: TWideStringField;
+    ADOQuery8ATO: TFloatField;
+    ADOQuery2nb: TIntegerField;
+    ADOQuery2Diplome: TWideStringField;
+    ADOQuery4ecole: TIntegerField;
+    ADOQuery6Classe: TWideStringField;
+    ADOQuery10Classe: TWideStringField;
+    ADOQuery11Ecolage_mois: TIntegerField;
+    ADOQuery9NMatricule: TIntegerField;
+    ADOQuery9Responsable: TWideStringField;
+    ADOQuery9Du: TDateTimeField;
+    ADOQuery9Ecolagemois: TSmallintField;
+    ADOQuery9SOMME: TIntegerField;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  DataModule2: TDataModule2;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TDataModule2.DataModuleCreate(Sender: TObject);
+begin
+ADOConnection1.Close;
+Adoconnection1.ConnectionString:= 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source='+ExtractFilePath('application.ExecName')+'GesCo.mdb;Persist Security Info=False';
+ADOConnection1.Open;
+AdoTable1.Active:=true;
+AdoTable2.Active:=true;
+AdoTable3.Active:=true;
+AdoTable4.Active:=true;
+AdoTable5.Active:=true;
+AdoTable7.Active:=true;
+AdoTable9.Active:=true;
+AdoTable10.Active:=true;
+AdoTable11.Active:=true;
+AdoTable12.Active:=true;
+AdoTable13.Active:=true;
+AdoQuery1.Active:=true;
+AdoQuery2.Active:=true;
+AdoQuery4.Active:=true;
+AdoQuery6.Active:=true;
+AdoQuery7.Active:=true;
+Adoquery9.Active:=true;
+AdoQuery8.Active:=true;
+AdoQuery10.Active:=true;
+AdoQuery11.Active:=true;
+AdoQuery12.Active:=true;
+AdoQuery13.Active:=true;
+AdoQuery14.Active:=true;
+
+end;
+
+end.

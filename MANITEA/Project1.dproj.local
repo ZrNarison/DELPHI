@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/03/13 21:22:18.850.pas,C:\Users\IBM\Documents\RAD Studio\Projects\Unit1.pas=D:\Mahaleo\MANITEA\Unit1.pas</Transaction>
+    <Transaction>2019/03/13 21:22:18.850.dfm,C:\Users\IBM\Documents\RAD Studio\Projects\Unit1.dfm=D:\Mahaleo\MANITEA\Unit1.dfm</Transaction>
+    <Transaction>2019/03/13 21:22:27.126.dproj,C:\Users\IBM\Documents\RAD Studio\Projects\Project1.dproj=D:\Mahaleo\MANITEA\Project1.dproj</Transaction>
+    <Transaction>2019/04/12 11:54:50.324.pas,D:\Documents\DELPHI2010\MANITEA\Unit4.pas=D:\Documents\DELPHI2010\MANITEA\Fournisseur.pas</Transaction>
+    <Transaction>2019/04/12 11:54:50.324.dfm,D:\Documents\DELPHI2010\MANITEA\Unit4.dfm=D:\Documents\DELPHI2010\MANITEA\Fournisseur.dfm</Transaction>
+    <Transaction>2019/04/12 12:02:55.795.pas,D:\Documents\DELPHI2010\MANITEA\Unit5.pas=D:\Documents\DELPHI2010\MANITEA\FactureAchat.pas</Transaction>
+    <Transaction>2019/04/12 12:02:55.795.dfm,D:\Documents\DELPHI2010\MANITEA\Unit5.dfm=D:\Documents\DELPHI2010\MANITEA\FactureAchat.dfm</Transaction>
+    <Transaction>2019/04/12 14:31:00.732.pas,D:\Documents\DELPHI2010\MANITEA\Unit6.pas=D:\Documents\DELPHI2010\MANITEA\FactureVente.pas</Transaction>
+    <Transaction>2019/04/12 14:31:00.732.dfm,D:\Documents\DELPHI2010\MANITEA\Unit6.dfm=D:\Documents\DELPHI2010\MANITEA\FactureVente.dfm</Transaction>
+    <Transaction>2019/04/12 15:18:07.564.pas,D:\Documents\DELPHI2010\MANITEA\Unit7.pas=D:\Documents\DELPHI2010\MANITEA\ConsultationAchat.pas</Transaction>
+    <Transaction>2019/04/12 15:18:07.564.dfm,D:\Documents\DELPHI2010\MANITEA\Unit7.dfm=D:\Documents\DELPHI2010\MANITEA\ConsultationAchat.dfm</Transaction>
+    <Transaction>2019/04/12 15:58:01.319.pas,D:\Documents\DELPHI2010\MANITEA\Unit8.pas=D:\Documents\DELPHI2010\MANITEA\CONSULTATIONVENTES.pas</Transaction>
+    <Transaction>2019/04/12 15:58:01.319.dfm,D:\Documents\DELPHI2010\MANITEA\Unit8.dfm=D:\Documents\DELPHI2010\MANITEA\CONSULTATIONVENTES.dfm</Transaction>
+    <Transaction>2019/04/12 16:39:25.389.pas,D:\Documents\DELPHI2010\MANITEA\Unit9.pas=D:\Documents\DELPHI2010\MANITEA\STATISTIQUEREGLEMENT.pas</Transaction>
+    <Transaction>2019/04/12 16:39:25.389.dfm,D:\Documents\DELPHI2010\MANITEA\Unit9.dfm=D:\Documents\DELPHI2010\MANITEA\STATISTIQUEREGLEMENT.dfm</Transaction>
+    <Transaction>2019/04/12 17:07:50.132.pas,D:\Documents\DELPHI2010\MANITEA\Unit10.pas=D:\Documents\DELPHI2010\MANITEA\AdminCompte.pas</Transaction>
+    <Transaction>2019/04/12 17:07:50.132.dfm,D:\Documents\DELPHI2010\MANITEA\Unit10.dfm=D:\Documents\DELPHI2010\MANITEA\AdminCompte.dfm</Transaction>
+    <Transaction>2019/04/12 17:22:23.729.pas,D:\Documents\DELPHI2010\MANITEA\Unit11.pas=D:\Documents\DELPHI2010\MANITEA\PASS.pas</Transaction>
+    <Transaction>2019/04/12 17:22:23.729.dfm,D:\Documents\DELPHI2010\MANITEA\Unit11.dfm=D:\Documents\DELPHI2010\MANITEA\PASS.dfm</Transaction>
+    <Transaction>2019/04/12 19:08:20.945.pas,D:\Documents\DELPHI2010\MANITEA\Unit12.pas=D:\Documents\DELPHI2010\MANITEA\ACHAT.pas</Transaction>
+    <Transaction>2019/04/12 19:08:20.945.dfm,D:\Documents\DELPHI2010\MANITEA\Unit12.dfm=D:\Documents\DELPHI2010\MANITEA\ACHAT.dfm</Transaction>
+    <Transaction>2019/04/12 19:26:53.836.pas,D:\Documents\DELPHI2010\MANITEA\Unit13.pas=D:\Documents\DELPHI2010\MANITEA\VENTE.pas</Transaction>
+    <Transaction>2019/04/12 19:26:53.836.dfm,D:\Documents\DELPHI2010\MANITEA\Unit13.dfm=D:\Documents\DELPHI2010\MANITEA\VENTE.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

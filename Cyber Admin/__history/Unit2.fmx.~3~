@@ -1,0 +1,189 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 624
+  ClientWidth = 838
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Scale
+    Size.Width = 825.000000000000000000
+    Size.Height = 625.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 76.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connexion'
+      object Button1: TButton
+        Align = Scale
+        Position.X = 24.000000000000000000
+        Position.Y = 72.971328735351560000
+        Size.Width = 113.000000000000000000
+        Size.Height = 22.296798706054690000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Connected'
+      end
+      object Button2: TButton
+        Align = Scale
+        Position.X = 152.000000000000000000
+        Position.Y = 72.971328735351560000
+        Size.Width = 113.000000000000000000
+        Size.Height = 22.296798706054690000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Disconnected'
+      end
+      object StringGrid1: TStringGrid
+        Align = Scale
+        Position.X = 280.000000000000000000
+        Size.Width = 537.000000000000000000
+        Size.Height = 368.910614013671900000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        RowCount = 100
+        RowHeight = 21.000000000000000000
+        object StringColumn1: TStringColumn
+          Size.Width = 180.000000000000000000
+          Size.Height = 357.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object StringColumn2: TStringColumn
+          Position.X = 180.000000000000000000
+          Size.Width = 205.000000000000000000
+          Size.Height = 357.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object StringColumn3: TStringColumn
+          Position.X = 385.000000000000000000
+          Size.Width = 128.000000000000000000
+          Size.Height = 357.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 96.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cyber Compte'
+      object Panel1: TPanel
+        Align = Scale
+        Position.X = -8.000000000000000000
+        Size.Width = 830.000000000000000000
+        Size.Height = 585.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GroupBox2: TGroupBox
+          Align = Scale
+          Position.X = 14.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 611.000000000000000000
+          Size.Height = 104.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tarif/Montant'
+          TabOrder = 1
+        end
+        object Panel2: TPanel
+          Align = Scale
+          Position.X = 15.000000000000000000
+          Position.Y = 232.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 329.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label1: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 40.000000000000000000
+            Text = 'Label1'
+          end
+          object Label2: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 160.000000000000000000
+            Text = 'Label1'
+          end
+        end
+        object GroupBox1: TGroupBox
+          Align = Scale
+          Position.X = 13.000000000000000000
+          Position.Y = 116.000000000000000000
+          Size.Width = 612.000000000000000000
+          Size.Height = 115.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Type de connexion'
+          TabOrder = 3
+        end
+        object Button3: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 184.000000000000000000
+          TabOrder = 6
+          Text = 'Valider'
+        end
+        object Button4: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 328.000000000000000000
+          TabOrder = 5
+          Text = 'Annuler'
+        end
+        object Button5: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 496.000000000000000000
+          TabOrder = 4
+          Text = 'Fermer'
+        end
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 24
+    object MenuItem1: TMenuItem
+      Text = '&FICHIER'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = 'C&onnexion'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = 'C&yber Compte'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Text = 'QUITTER'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = 'Parametre'
+      end
+    end
+  end
+end

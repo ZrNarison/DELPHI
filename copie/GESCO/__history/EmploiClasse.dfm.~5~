@@ -1,0 +1,60 @@
+object Form14: TForm14
+  Left = 0
+  Top = 0
+  BorderStyle = bsToolWindow
+  Caption = 'EMPLOI DU TEMPS CLASSE'
+  ClientHeight = 492
+  ClientWidth = 983
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 983
+    Height = 492
+    Align = alClient
+    Color = clBtnShadow
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 48
+    ExplicitTop = 40
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 8
+      Top = 72
+      Width = 145
+      Height = 21
+      KeyField = 'Classe'
+      ListSource = DataModule2.DataSource2
+      TabOrder = 0
+    end
+    object DBLookupComboBox2: TDBLookupComboBox
+      Left = 8
+      Top = 232
+      Width = 145
+      Height = 21
+      KeyField = 'Classe'
+      ListSource = DataModule2.DataSource4
+      TabOrder = 1
+    end
+    object DrawGrid1: TDrawGrid
+      Left = 239
+      Top = 32
+      Width = 658
+      Height = 385
+      Color = clGradientActiveCaption
+      ColCount = 8
+      DefaultColWidth = 80
+      RowCount = 15
+      TabOrder = 2
+    end
+  end
+end

@@ -1,0 +1,76 @@
+unit Unit3;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, FileCtrl, Keyboard, DB, Mask, DBCtrls, ADODB,
+  Buttons, Grids, DBGrids, ExtCtrls;
+
+type
+  TForm3 = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    ADOTable1: TADOTable;
+    ADOTable1Region: TWideStringField;
+    ADOConnection1: TADOConnection;
+    ADOCommand1: TADOCommand;
+    ADOTable2: TADOTable;
+    ADOTable2Region: TWideStringField;
+    ADOTable2District: TWideStringField;
+    ADOTable3: TADOTable;
+    ADOTable3District: TWideStringField;
+    ADOTable3Commune: TWideStringField;
+    ADOTable4: TADOTable;
+    ADOTable4Site: TWideStringField;
+    ADOTable4Commune: TWideStringField;
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+    ADOQuery1: TADOQuery;
+    ADOQuery1Region: TWideStringField;
+    ADOQuery1District: TWideStringField;
+    ADOQuery1Commune: TWideStringField;
+    ADOQuery1Site: TWideStringField;
+    DataSource3: TDataSource;
+    DataSource4: TDataSource;
+    DataSource5: TDataSource;
+    ADOQuery2: TADOQuery;
+    ADOQuery2Region: TWideStringField;
+    DataSource6: TDataSource;
+    ADOQuery3: TADOQuery;
+    ADOQuery3District: TWideStringField;
+    DataSource7: TDataSource;
+    DataSource8: TDataSource;
+    TabSheet2: TTabSheet;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    RadioGroup1: TRadioGroup;
+    ComboBox1: TComboBox;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    ComboBox2: TComboBox;
+    DBEdit3: TDBEdit;
+    ComboBox3: TComboBox;
+    DBEdit4: TDBEdit;
+    DBGrid1: TDBGrid;
+    procedure SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.SpeedButton3Click(Sender: TObject);
+begin
+Form3.Close;
+end;
+
+end.

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/07 09:40:01.000.554,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/08/10 09:24:19.000.989,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/08/10 16:31:52.000.974,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/08/31 07:25:29.000.363,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/09/01 14:31:18.000.544,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/09/01 14:31:30.000.261,=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit2.pas</Transaction>
+    <Transaction>2020/09/01 14:43:30.000.112,D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\Unit1.dfm=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2020/09/01 14:43:30.000.112,D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\Unit1.pas=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2020/09/01 14:43:32.000.100,D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\Unit2.pas=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit2.pas</Transaction>
+    <Transaction>2020/09/01 14:43:32.000.100,D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\Unit2.dfm=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Unit2.dfm</Transaction>
+    <Transaction>2020/09/01 14:43:37.000.728,D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\ONGBASE.dproj=C:\Users\ThinkPad\Documents\Embarcadero\Studio\Projets\Project1.dproj</Transaction>
+    <Transaction>2020/09/01 14:44:16.000.671,=D:\LOGICIEL\DOCUMENTS\DELPHI\ONGBASE\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

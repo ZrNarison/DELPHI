@@ -1,0 +1,58 @@
+unit login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.DBCtrls;
+
+type
+  TForm17 = class(TForm)
+    Edit1: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    DBLookupComboBox1: TDBLookupComboBox;
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form17: TForm17;
+
+implementation
+
+{$R *.dfm}
+
+uses base, Unit1;
+
+procedure TForm17.BitBtn1Click(Sender: TObject);
+begin
+if DblookUpComboBox1.ListField=DataModule2.ADOTable15.FieldByName('id_ResF').Asstring then
+  begin
+    if Edit1.Text=DataModule2.ADOTable15.FieldByName('Mot_de_passe').AsString then
+    begin
+      showMessage('IZy');
+    end
+  else
+    begin
+      ShowMessage('Tsy izy');
+    end
+  end
+else
+  begin
+    ShowMessage('Diso');
+  end
+end;
+
+procedure TForm17.BitBtn2Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+end.

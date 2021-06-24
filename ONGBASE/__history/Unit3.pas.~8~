@@ -1,0 +1,69 @@
+unit Unit3;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, FileCtrl, Keyboard, DB, Mask, DBCtrls, ADODB,
+  Buttons, Grids, DBGrids;
+
+type
+  TForm3 = class(TForm)
+    ADOTable1: TADOTable;
+    ADOConnection1: TADOConnection;
+    ADOCommand1: TADOCommand;
+    ADOTable2: TADOTable;
+    ADOTable3: TADOTable;
+    ADOTable4: TADOTable;
+    ADOTable1nom_region: TWideStringField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DataSource1: TDataSource;
+    ADOTable2nom_region: TWideStringField;
+    ADOTable2nom_district: TWideStringField;
+    DataSource2: TDataSource;
+    ComboBox1: TComboBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    DBEdit2: TDBEdit;
+    Label4: TLabel;
+    ComboBox2: TComboBox;
+    DBEdit3: TDBEdit;
+    Label5: TLabel;
+    DBEdit4: TDBEdit;
+    Label6: TLabel;
+    ComboBox3: TComboBox;
+    Label7: TLabel;
+    DBGrid1: TDBGrid;
+    ADOQuery1: TADOQuery;
+    DataSource3: TDataSource;
+    DataSource4: TDataSource;
+    DataSource5: TDataSource;
+    ADOQuery1nom_region: TWideStringField;
+    ADOQuery1nom_district: TWideStringField;
+    ADOQuery1nom_commune: TWideStringField;
+    ADOQuery1nom_site: TWideStringField;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    RadioButton4: TRadioButton;
+    ADOQuery2: TADOQuery;
+    DataSource6: TDataSource;
+    ADOQuery3: TADOQuery;
+    DataSource7: TDataSource;
+    DataSource8: TDataSource;
+    ADOQuery4: TADOQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+end.

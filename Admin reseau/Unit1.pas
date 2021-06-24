@@ -1,0 +1,64 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, Menus, ExtCtrls,Registry;
+
+type
+  Tahirizo=record
+  infobulles : Boolean;
+  BulleTime : Byte;
+  end;
+
+type
+  TMemo1 = class(TForm)
+    BitBtn1: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn2: TBitBtn;
+    wIp: TLabel;
+    LocalIp: TLabel;
+    Timer1: TTimer;
+    Cdispo: TLabel;
+    Ccours: TLabel;
+    MainMenu1: TMainMenu;
+    Fichier1: TMenuItem;
+    Editer2: TMenuItem;
+    N1: TMenuItem;
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Fety mangotraka }
+
+  end;
+
+var
+  Memo1: TMemo1;
+  wIp,LocalIp:String;
+  //Cdispo,Ccours:;
+  andrana:Byte;
+  tapitra:boolean;
+  atolera:Tahirizo;
+implementation
+
+{$R *.dfm}
+
+procedure TMemo1.FormCreate(Sender: TObject);
+var
+mamorona:TRegistry;
+begin
+//  mamorona:=TRegistry.Create;
+
+end;
+
+procedure TMemo1.Timer1Timer(Sender: TObject);
+var
+lera:tTimer;//Mitahiry ny statu connexion teo aloha
+begin
+
+end;
+
+end.

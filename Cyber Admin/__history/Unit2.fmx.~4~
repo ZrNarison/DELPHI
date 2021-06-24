@@ -1,0 +1,265 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 624
+  ClientWidth = 838
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Scale
+    Size.Width = 825.000000000000000000
+    Size.Height = 625.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 76.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connexion'
+      object Button1: TButton
+        Align = Scale
+        Position.X = 24.000000000000000000
+        Position.Y = 41.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Connected'
+      end
+      object Button2: TButton
+        Align = Scale
+        Position.X = 152.000000000000000000
+        Position.Y = 41.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Disconnected'
+      end
+      object Panel3: TPanel
+        Align = Scale
+        Position.X = 272.000000000000000000
+        Size.Width = 553.000000000000000000
+        Size.Height = 593.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label7: TLabel
+          Align = Scale
+          StyledSettings = [Family, FontColor]
+          Position.X = 10.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 138.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Adress IP'
+        end
+        object Label8: TLabel
+          Align = Scale
+          StyledSettings = [Family, FontColor]
+          Position.X = 153.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 147.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Adress MAC'
+        end
+        object Label9: TLabel
+          Align = Scale
+          StyledSettings = [Family, FontColor]
+          Position.X = 305.000000000000000000
+          Position.Y = 8.000000000000000000
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Dur'#233'e'
+        end
+        object Label10: TLabel
+          Align = Scale
+          StyledSettings = [Family, FontColor]
+          Position.X = 429.000000000000000000
+          Position.Y = 8.000000000000000000
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Co'#251't'
+        end
+        object Prix: TLabel
+          Align = Scale
+          Position.X = 429.000000000000000000
+          Position.Y = 40.000000000000000000
+        end
+        object Heure: TLabel
+          Align = Scale
+          Position.X = 305.000000000000000000
+          Position.Y = 40.000000000000000000
+        end
+        object MAC: TLabel
+          Align = Scale
+          Position.X = 153.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 147.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object IP: TLabel
+          Align = Scale
+          Position.X = 10.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 138.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 96.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cyber Compte'
+      object Panel1: TPanel
+        Align = Scale
+        Position.X = -8.000000000000000000
+        Size.Width = 830.000000000000000000
+        Size.Height = 585.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GroupBox2: TGroupBox
+          Align = Scale
+          Position.X = 14.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 611.000000000000000000
+          Size.Height = 104.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tarif/Montant'
+          TabOrder = 1
+          object Label3: TLabel
+            Align = Scale
+            Position.X = 64.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'WIFI'
+          end
+          object Label4: TLabel
+            Align = Scale
+            Position.X = 16.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'Label3'
+          end
+          object Label6: TLabel
+            Align = Scale
+            Position.X = 408.000000000000000000
+            Position.Y = 58.000000000000000000
+            Text = 'Label3'
+          end
+          object Label5: TLabel
+            Align = Scale
+            Position.X = 448.000000000000000000
+            Position.Y = 37.000000000000000000
+            Size.Width = 41.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'POSTE'
+          end
+        end
+        object Panel2: TPanel
+          Align = Scale
+          Position.X = 15.000000000000000000
+          Position.Y = 232.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 329.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label1: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 40.000000000000000000
+            Text = 'Label1'
+          end
+          object Label2: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 160.000000000000000000
+            Text = 'Label1'
+          end
+        end
+        object GroupBox1: TGroupBox
+          Align = Scale
+          Position.X = 13.000000000000000000
+          Position.Y = 116.000000000000000000
+          Size.Width = 612.000000000000000000
+          Size.Height = 115.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Type de connexion'
+          TabOrder = 3
+        end
+        object Button3: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 184.000000000000000000
+          TabOrder = 6
+          Text = 'Valider'
+        end
+        object Button4: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 328.000000000000000000
+          TabOrder = 5
+          Text = 'Annuler'
+        end
+        object Button5: TButton
+          Align = Scale
+          Position.X = 672.000000000000000000
+          Position.Y = 496.000000000000000000
+          TabOrder = 4
+          Text = 'Fermer'
+        end
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 24
+    object MenuItem1: TMenuItem
+      Text = '&FICHIER'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = 'C&onnexion'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = 'C&yber Compte'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Text = 'QUITTER'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = 'Parametre'
+      end
+    end
+  end
+end

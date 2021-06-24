@@ -1,0 +1,34 @@
+object connexion: Tconnexion
+  OldCreateOrder = False
+  Height = 215
+  Width = 268
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\LOGICIEL\DOCUMEN' +
+      'TS\DELPHI\ONGBASE\ORN BASE.mdb;Mode=ReadWrite;Persist Security I' +
+      'nfo=False'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 40
+    Top = 32
+  end
+  object ADODataSet1: TADODataSet
+    Parameters = <>
+    Left = 120
+    Top = 24
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'region'
+    Left = 32
+    Top = 88
+    object ADOTable1Region: TWideStringField
+      FieldName = 'Region'
+      Size = 80
+    end
+  end
+end

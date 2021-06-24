@@ -1,0 +1,49 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 468
+  ClientWidth = 835
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCloseQuery = FormCloseQuery
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 16
+    Top = 16
+    object Fichier1: TMenuItem
+      Caption = '&Fichier'
+      object Nouveau1: TMenuItem
+        Caption = '&Nouveau'
+        OnClick = Nouveau1Click
+      end
+      object Quitter1: TMenuItem
+        Caption = '&Quitter'
+        OnClick = Quitter1Click
+      end
+    end
+    object Edition1: TMenuItem
+      Caption = '&Editer'
+      object Journale1: TMenuItem
+        Caption = '&Journal'
+        OnClick = Journale1Click
+      end
+    end
+    object N1: TMenuItem
+      Caption = '&?'
+      object Aide1: TMenuItem
+        Caption = '&Aide'
+      end
+      object Help1: TMenuItem
+        Caption = '&Help'
+      end
+    end
+  end
+end

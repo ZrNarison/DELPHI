@@ -1,0 +1,92 @@
+unit Main;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Menus,
+  FMX.TabControl, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FMX.StdCtrls, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FMX.DateTimeCtrls, FMX.Controls.Presentation, FMX.Edit, FMX.Colors,
+  FireDAC.Stan.Async, FireDAC.DApt;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    Panel1: TPanel;
+    Label1: TLabel;
+    TimeEdit1: TTimeEdit;
+    TimeEdit2: TTimeEdit;
+    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Panel2: TPanel;
+    Label5: TLabel;
+    Panel3: TPanel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    Label6: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+{$R *.NmXhdpiPh.fmx ANDROID}
+{$R *.Windows.fmx MSWINDOWS}
+{$R *.iPhone4in.fmx IOS}
+{$R *.SmXhdpiPh.fmx ANDROID}
+{$R *.LgXhdpiTb.fmx ANDROID}
+{$R *.Macintosh.fmx _MACOS}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+a,b:double;
+begin
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+TabControl1.Visible:=false;
+end;
+
+procedure TForm1.MenuItem3Click(Sender: TObject);
+begin
+Tabitem1.TabControl.Visible:=true;
+Tabitem1.Visible:=true;
+Tabitem2.Visible:=false;
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+Tabitem1.TabControl.Visible:=true;
+ Tabitem1.Visible:=False;
+Tabitem2.Visible:=true;
+end;
+
+end.

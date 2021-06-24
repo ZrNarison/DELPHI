@@ -1,0 +1,55 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  ClientHeight = 512
+  ClientWidth = 767
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBChart1: TDBChart
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 512
+    Title.Text.Strings = (
+      'REPRESENTATION GRAPHIQUE DES ETUDIANT')
+    Align = alClient
+    TabOrder = 0
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      Marks.Visible = False
+      DataSource = DataModule2.ADOQuery3
+      XLabelsSource = 'nombre'
+      MultiBar = mbSideAll
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      XValues.ValueSource = 'nombre'
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      YValues.ValueSource = 'nombre'
+    end
+    object Series2: TBarSeries
+      BarBrush.Gradient.EndColor = 3513587
+      BarBrush.Gradient.Visible = True
+      Marks.Visible = False
+      DataSource = DataModule2.ADOTable6
+      XLabelsSource = 'Sexe'
+      Gradient.EndColor = 3513587
+      Gradient.Visible = True
+      MultiBar = mbSideAll
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      XValues.ValueSource = 'N'#176'Matricule'
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      YValues.ValueSource = 'N'#176'Matricule'
+    end
+  end
+end

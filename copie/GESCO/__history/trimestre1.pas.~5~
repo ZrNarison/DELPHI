@@ -1,0 +1,81 @@
+unit trimestre1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TForm13 = class(TForm)
+    Panel2: TPanel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    DBGrid2: TDBGrid;
+    Edit2: TEdit;
+    DateTimePicker3: TDateTimePicker;
+    DateTimePicker4: TDateTimePicker;
+    BitBtn5: TBitBtn;
+    BitBtn6: TBitBtn;
+    BitBtn7: TBitBtn;
+    BitBtn8: TBitBtn;
+    Label1: TLabel;
+    procedure BitBtn5Click(Sender: TObject);
+    procedure BitBtn6Click(Sender: TObject);
+    procedure BitBtn8Click(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure BitBtn7Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form13: TForm13;
+
+implementation
+
+{$R *.dfm}
+
+uses trimestre, base;
+
+procedure TForm13.BitBtn5Click(Sender: TObject);
+begin
+DataModule2.Adotable9.Append;
+DataModule2.AdoTable9.insert;
+DataModule2.AdoTable9.FieldByName('Trimestre').Value:=Edit2.Text;
+DataModule2.AdoTable9.FieldByName('Debut').Value:=DateTimePicker3.Date;
+DataModule2.AdoTable9.FieldByName('fin').Value:=DateTimePicker4.Date;
+DataModule2.ADOQuery7.Refresh;
+Edit2.Text:='';
+end;
+
+procedure TForm13.BitBtn6Click(Sender: TObject);
+begin
+DataModule2.ADOTable3.Edit;
+DbGrid2.ReadOnly:=false;
+end;
+
+procedure TForm13.BitBtn7Click(Sender: TObject);
+begin
+DataModule2.ADOTable9.Delete;
+DataModule2.ADOQuery7.Close;
+DataModule2.ADOQuery7.Refresh;
+end;
+
+procedure TForm13.BitBtn8Click(Sender: TObject);
+begin
+Edit2.Clear;
+end;
+
+procedure TForm13.Label1Click(Sender: TObject);
+begin
+Form13.Close;
+Form11.ShowModal;
+end;
+
+end.

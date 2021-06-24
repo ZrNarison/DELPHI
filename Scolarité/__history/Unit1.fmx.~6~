@@ -1,0 +1,378 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 591
+  ClientWidth = 831
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 831.000000000000000000
+    Size.Height = 591.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 104.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau Classe'
+      object Panel1: TPanel
+        Align = Scale
+        Position.X = 8.644993782043457000
+        Position.Y = 8.085561752319336000
+        Size.Width = 597.585205078125100000
+        Size.Height = 534.657775878906200000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object FloatAnimation1: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Scale.X'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+        object Label1: TLabel
+          Position.X = 48.000000000000000000
+          Position.Y = 48.000000000000000000
+          Text = 'Classe de :'
+        end
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 184.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label2: TLabel
+          Position.X = 48.000000000000000000
+          Position.Y = 144.000000000000000000
+          Text = 'Tutilaire :'
+        end
+        object ComboEdit1: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          ItemHeight = 19.000000000000000000
+          ItemIndex = -1
+          Position.X = 184.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Position.X = 184.000000000000000000
+          Position.Y = 271.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label3: TLabel
+          Position.X = 48.000000000000000000
+          Position.Y = 272.000000000000000000
+          Text = 'Ecolage :'
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 112.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau Ecolage'
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 115.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau Etudiant'
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 112.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau Mati'#233're'
+    end
+    object TabItem5: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 127.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Nouveau Professeur'
+    end
+    object TabItem6: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 87.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Editer Classe'
+    end
+    object TabItem7: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 95.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Editer Ecolage'
+    end
+    object TabItem8: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 98.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Editer Etudiant'
+    end
+    object TabItem9: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 94.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Editer Mati'#233're'
+    end
+    object TabItem10: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 110.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Editer Professeur'
+    end
+    object TabItem11: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 112.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Statistique Classe'
+    end
+    object TabItem12: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Statistique Ecolage'
+    end
+    object TabItem13: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 123.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Statistique Etudiant'
+    end
+    object TabItem14: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 119.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Statistique Mati'#233're'
+    end
+    object TabItem15: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 134.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Statistique Professeur'
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 80
+    Top = 360
+    object MenuItem1: TMenuItem
+      Text = 'FICHIER'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = '&Nouveau'
+        object MenuItem4: TMenuItem
+          Locked = True
+          Text = '&Classe'
+          OnClick = MenuItem4Click
+        end
+        object MenuItem21: TMenuItem
+          Locked = True
+          Text = 'E&colage'
+          OnClick = MenuItem21Click
+        end
+        object MenuItem5: TMenuItem
+          Locked = True
+          Text = '&Etudiant'
+          OnClick = MenuItem5Click
+        end
+        object MenuItem6: TMenuItem
+          Locked = True
+          Text = '&Mati'#233're'
+          OnClick = MenuItem6Click
+        end
+        object MenuItem7: TMenuItem
+          Locked = True
+          Text = '&Professeur'
+          OnClick = MenuItem7Click
+        end
+      end
+      object MenuItem12: TMenuItem
+        Locked = True
+        ShortCut = 16471
+        Text = '&QUITTER'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+      object MenuItem10: TMenuItem
+        Locked = True
+        Text = '&Classe'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem13: TMenuItem
+        Locked = True
+        Text = 'E&colage'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem11: TMenuItem
+        Locked = True
+        Text = '&Etudiant'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem8: TMenuItem
+        Locked = True
+        Text = '&Mati'#233're'
+        OnClick = MenuItem8Click
+      end
+      object MenuItem9: TMenuItem
+        Locked = True
+        Text = '&Professeur'
+        OnClick = MenuItem9Click
+      end
+    end
+    object MenuItem14: TMenuItem
+      Text = '&STATISTIQUE'
+      object MenuItem15: TMenuItem
+        Locked = True
+        Text = '&Classe'
+        OnClick = MenuItem15Click
+      end
+      object MenuItem16: TMenuItem
+        Locked = True
+        Text = '&Etudiant'
+        OnClick = MenuItem16Click
+      end
+      object MenuItem17: TMenuItem
+        Locked = True
+        Text = 'E&colage'
+        OnClick = MenuItem17Click
+      end
+      object MenuItem18: TMenuItem
+        Locked = True
+        Text = '&Mati'#233're'
+        OnClick = MenuItem18Click
+      end
+      object MenuItem19: TMenuItem
+        Locked = True
+        Text = '&Professeur'
+        OnClick = MenuItem19Click
+      end
+    end
+    object MenuItem20: TMenuItem
+      ShortCut = 112
+      Text = '&?'
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\LOGICIEL\DOCUMEN' +
+      'TS\DELPHI\Scolarit'#233'\Gesco.mdb;Mode=ReadWrite;Persist Security In' +
+      'fo=False'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 168
+    Top = 512
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'Classe'
+    Left = 128
+    Top = 448
+    object ADOTable1Ref_classe: TWideStringField
+      FieldName = 'Ref_classe'
+      Size = 50
+    end
+    object ADOTable1Tutilaire: TWideStringField
+      FieldName = 'Tutilaire'
+      Size = 50
+    end
+    object ADOTable1Ecolage: TWideStringField
+      FieldName = 'Ecolage'
+      Size = 50
+    end
+  end
+end

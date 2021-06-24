@@ -1,0 +1,38 @@
+inherited Form1_Windows: TForm1_Windows
+  ClientWidth = 544
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 544.000000000000000000
+    TabIndex = 1
+    inherited TabItem1: TTabItem
+      IsSelected = False
+      inherited Label7: TLabel
+        Position.X = 104.000000000000000000
+      end
+      inherited Label8: TLabel
+        Position.X = 216.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      IsSelected = True
+      inherited Panel1: TPanel
+        Size.Width = 385.000000000000000000
+        inherited Panel2: TPanel
+          Size.Width = 361.000000000000000000
+          inherited Label5: TLabel
+            Size.Width = 332.000000000000000000
+          end
+        end
+      end
+      inherited Button1: TButton
+        Position.X = 424.000000000000000000
+      end
+      inherited Button2: TButton
+        Position.X = 424.000000000000000000
+      end
+      inherited Button3: TButton
+        Position.X = 424.000000000000000000
+      end
+    end
+  end
+end

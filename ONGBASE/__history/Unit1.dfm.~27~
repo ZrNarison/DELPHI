@@ -1,0 +1,104 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 471
+  ClientWidth = 759
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 761
+    Height = 473
+    ActivePage = A
+    TabOrder = 0
+    object A: TTabSheet
+      Caption = 'Activite'
+      object Label1: TLabel
+        Left = 144
+        Top = 152
+        Width = 31
+        Height = 13
+        Caption = 'Label1'
+      end
+    end
+    object S: TTabSheet
+      Caption = 'Site'
+      ImageIndex = 1
+    end
+    object p: TTabSheet
+      Caption = 'Personnel'
+      ImageIndex = 2
+    end
+    object TabSheet1: TTabSheet
+      Caption = 'ONG'
+      ImageIndex = 3
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Compte'
+      ImageIndex = 4
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 128
+    Top = 120
+    object FICHIER1: TMenuItem
+      Caption = '&FICHIER'
+      object Nouveau1: TMenuItem
+        Caption = '&Nouveau'
+        object ActiverPNNC1: TMenuItem
+          Caption = '&Activer PNNC'
+          OnClick = ActiverPNNC1Click
+        end
+        object SitePNNC1: TMenuItem
+          Caption = 'S&ite PNNC'
+        end
+        object ONG1: TMenuItem
+          Caption = '&Personnel'
+        end
+        object ONG2: TMenuItem
+          Caption = 'ON&G'
+        end
+      end
+      object Export1: TMenuItem
+        Caption = 'Expo&rt/Import'
+      end
+      object QUITTER1: TMenuItem
+        Caption = '&QUITTER'
+      end
+    end
+    object EDITER1: TMenuItem
+      Caption = '&VUE'
+      object Site1: TMenuItem
+        Caption = 'A&ctivit'#233
+      end
+      object Site2: TMenuItem
+        Caption = 'S&ite'
+      end
+      object Personnel1: TMenuItem
+        Caption = 'Personnel'
+      end
+      object ONG3: TMenuItem
+        Caption = 'ON&G'
+      end
+    end
+    object N1: TMenuItem
+      Caption = '?'
+      object Aide1: TMenuItem
+        Caption = '&Aide'
+      end
+      object Apropos1: TMenuItem
+        Caption = 'A p&ropos'
+      end
+    end
+  end
+end

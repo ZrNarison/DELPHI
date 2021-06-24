@@ -1,0 +1,29 @@
+unit Unit3;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  Tconnexion = class(TDataModule)
+    ADOConnection1: TADOConnection;
+    ADODataSet1: TADODataSet;
+    ADOTable1: TADOTable;
+    ADOTable1Region: TWideStringField;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  connexion: Tconnexion;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

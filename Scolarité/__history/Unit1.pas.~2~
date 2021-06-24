@@ -1,0 +1,79 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Menus,
+  FMX.TabControl;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
+    MenuItem20: TMenuItem;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    TabItem3: TTabItem;
+    TabItem4: TTabItem;
+    TabItem5: TTabItem;
+    TabItem6: TTabItem;
+    TabItem7: TTabItem;
+    TabItem8: TTabItem;
+    TabItem9: TTabItem;
+    TabItem10: TTabItem;
+    procedure FormCreate(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+tabcontrol1.Visible:=false;
+
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+TabControl1.Visible:=true;tabItem1.TabControl.Visible:=true;
+tabItem2.TabControl.Visible:=false;//tabItem2.TabControl.Enabled:=false;
+tabItem3.TabControl.Visible:=false;//tabItem3.TabControl.Enabled:=false;
+tabItem4.TabControl.Visible:=false;//tabItem4.TabControl.Enabled:=false;
+tabItem5.TabControl.Visible:=false;//tabItem5.TabControl.Enabled:=false;
+tabItem6.TabControl.Visible:=false;//tabItem6.TabControl.Enabled:=false;
+tabItem7.TabControl.Visible:=false;//tabItem7.TabControl.Enabled:=false;
+tabItem8.TabControl.Visible:=false;//tabItem8.TabControl.Enabled:=false;
+tabItem9.TabControl.Visible:=false;//tabItem9.TabControl.Enabled:=false;
+
+end;
+
+end.

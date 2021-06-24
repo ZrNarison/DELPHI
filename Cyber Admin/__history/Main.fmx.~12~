@@ -1,0 +1,229 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = SizeToolWin
+  Caption = 'Form1'
+  ClientHeight = 561
+  ClientWidth = 817
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 817.000000000000000000
+    Size.Height = 561.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 76.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connexion'
+      object Connected: TSpeedButton
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Connected'
+        object FloatAnimation1: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Height'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object Grid1: TGrid
+        Position.X = 240.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 529.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        RowCount = 100
+        RowHeight = 21.000000000000000000
+        object Column1: TColumn
+          Size.Width = 130.000000000000000000
+          Size.Height = 525.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Column2: TColumn
+          Position.X = 130.000000000000000000
+          Size.Width = 210.000000000000000000
+          Size.Height = 525.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object Column3: TColumn
+          Position.X = 340.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 525.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+      end
+      object Disconnected: TSpeedButton
+        Position.X = 120.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Disconnected'
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 96.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cyber Compte'
+      object Panel1: TPanel
+        Size.Width = 505.000000000000000000
+        Size.Height = 457.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Position.X = 24.000000000000000000
+          Position.Y = 299.000000000000000000
+          Text = 'D'#233'but du connexion'
+        end
+        object TimeEdit1: TTimeEdit
+          Time = 0.877083333333333400
+          Position.X = 152.000000000000000000
+          Position.Y = 296.000000000000000000
+          TabOrder = 0
+        end
+        object TimeEdit2: TTimeEdit
+          IsChecked = False
+          Time = 0.877083333333333400
+          Position.X = 152.000000000000000000
+          Position.Y = 336.000000000000000000
+          TabOrder = 1
+        end
+        object Label2: TLabel
+          Position.X = 24.000000000000000000
+          Position.Y = 347.000000000000000000
+          Text = 'Fin du connexion'
+        end
+        object Panel2: TPanel
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label5: TLabel
+            Position.Y = 24.000000000000000000
+            Size.Width = 494.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Label3'
+          end
+          object Label3: TLabel
+            Position.X = 8.000000000000000000
+            Text = 'Label3'
+          end
+          object Label4: TLabel
+            Position.X = 256.000000000000000000
+            Text = 'Label3'
+          end
+        end
+        object Panel3: TPanel
+          Position.X = 8.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 281.000000000000000000
+          Size.Height = 177.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object RadioButton1: TRadioButton
+            IsChecked = True
+            Position.X = 16.000000000000000000
+            Position.Y = 32.000000000000000000
+            TabOrder = 1
+            Text = 'WIFI'
+          end
+          object RadioButton2: TRadioButton
+            Position.X = 16.000000000000000000
+            Position.Y = 128.000000000000000000
+            TabOrder = 0
+            Text = 'POSTE'
+          end
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 3
+            Position.X = 128.000000000000000000
+            Position.Y = 32.000000000000000000
+          end
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 2
+            Position.X = 128.000000000000000000
+            Position.Y = 128.000000000000000000
+          end
+        end
+        object Label6: TLabel
+          Position.X = 17.000000000000000000
+          Position.Y = 66.000000000000000000
+          Text = 'Tarif/min'
+        end
+      end
+      object Button1: TButton
+        Position.X = 520.000000000000000000
+        Position.Y = 48.000000000000000000
+        TabOrder = 3
+        Text = 'VALIDER'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 520.000000000000000000
+        Position.Y = 152.000000000000000000
+        TabOrder = 2
+        Text = 'ANNULER'
+      end
+      object Button3: TButton
+        Position.X = 520.000000000000000000
+        Position.Y = 248.000000000000000000
+        TabOrder = 1
+        Text = 'QUITTER'
+        OnClick = Button3Click
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 536
+    Top = 448
+    object MenuItem1: TMenuItem
+      Text = '&FICHIER'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = '&Connexion'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = 'Cyber Co&mpte'
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+    end
+  end
+  object StyleBook1: TStyleBook
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+end

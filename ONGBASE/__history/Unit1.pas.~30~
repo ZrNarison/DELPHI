@@ -1,0 +1,63 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.Win.ADODB, Data.DB, Vcl.ComCtrls,
+  Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    FICHIER1: TMenuItem;
+    EDITER1: TMenuItem;
+    Nouveau1: TMenuItem;
+    Export1: TMenuItem;
+    QUITTER1: TMenuItem;
+    PageControl1: TPageControl;
+    A: TTabSheet;
+    S: TTabSheet;
+    p: TTabSheet;
+    Label1: TLabel;
+    ActiverPNNC1: TMenuItem;
+    SitePNNC1: TMenuItem;
+    ONG1: TMenuItem;
+    ONG2: TMenuItem;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    Site1: TMenuItem;
+    Site2: TMenuItem;
+    Personnel1: TMenuItem;
+    ONG3: TMenuItem;
+    N1: TMenuItem;
+    Aide1: TMenuItem;
+    Apropos1: TMenuItem;
+    procedure FormCreate(Sender: TObject);
+    procedure ActiverPNNC1Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.ActiverPNNC1Click(Sender: TObject);
+begin
+PageControl1.Visible:=true;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+PageControl1.Visible:=false;
+end;
+
+end.

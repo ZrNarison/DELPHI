@@ -1,0 +1,57 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Data.DB,
+  Vcl.DBCtrls, Data.Win.ADODB;
+
+type
+  TForm1 = class(TForm)
+    ADOTable1: TADOTable;
+    Label1: TLabel;
+    Label2: TLabel;
+    DataSource1: TDataSource;
+    Edit1: TEdit;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    ADOTable1N: TAutoIncField;
+    ADOTable1Fonction: TWideStringField;
+    ADOTable1code: TWideStringField;
+    ADOTable1cpt: TIntegerField;
+    DBComboBox1: TDBComboBox;
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+procedure TForm1.BitBtn2Click(Sender: TObject);
+begin
+close;
+end;
+
+procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+if messagedlg('Voulez vous vraiment quitter ?',mtconfirmation,[mbyes,mbno],0)=mryes then
+begin
+canclose:=true;
+application.terminate;
+end
+else
+canclose:=false;
+end;
+
+end.

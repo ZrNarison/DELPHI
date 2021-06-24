@@ -1,0 +1,71 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 624
+  ClientWidth = 838
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Scale
+    Size.Width = 825.000000000000000000
+    Size.Height = 617.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 76.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connexion'
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 96.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cyber Compte'
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 24
+    object MenuItem1: TMenuItem
+      Text = '&FICHIER'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = 'C&onnexion'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = 'C&yber Compte'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Text = 'QUITTER'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = '&EDITER'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = 'Parametre'
+      end
+    end
+  end
+end
